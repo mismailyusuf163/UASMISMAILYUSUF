@@ -1,0 +1,175 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 8%;
+background:#111827;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+section{
+padding:90px 8%;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:50px;
+padding-top:140px;
+}
+
+.hero-text{
+flex:1;
+min-width:300px;
+}
+
+.hero-text h1{
+font-size:60px;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+margin:20px 0;
+line-height:30px;
+font-size:18px;
+max-width:600px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+margin:8px 8px 8px 0;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.primary{
+background:#38bdf8;
+color:black;
+}
+
+.primary:hover{
+transform:translateY(-5px);
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.hero img{
+width:320px;
+height:320px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #38bdf8;
+box-shadow:0 0 30px #38bdf8;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.timeline{
+border-left:4px solid #38bdf8;
+padding-left:20px;
+}
+
+.timeline div{
+margin-bottom:25px;
+}
+
+.project-card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+}
+
+.project-card h3{
+margin-bottom:15px;
+}
+
+footer{
+padding:25px;
+text-align:center;
+background:#111827;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero img{
+width:230px;
+height:230px;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
+nav{
+display:none;
+}
+
+}
